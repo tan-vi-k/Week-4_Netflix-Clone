@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --primary: rgba(0, 0, 0, 0.6);
+  --secondary: rgba(0, 0, 0, 0.6);
+
+  --one: rgba(0, 0, 0, 0.75);
+  --two: rgba(0, 0, 0, 0.75);
+}
+
+* {
+  /* background: black; */
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0;
+  font-weight: 500; /* changes */
+}
+
+body {
+  background: linear-gradient(90deg, var(--primary), var(--secondary)),
+    url("./images/Misc/BGimg.jpg");
+  margin: 0;
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.upper_bod {
+  margin-bottom: 8px;
+  width: 100%;
+  padding-bottom: 5em;
+}
+
+.nav_bar {
+  width: 95%;
+  max-width: 1450px; /* 1475 */
+  margin: auto;
+  height: 90px;
+  align-items: center;
+}
+
+.nav_bar img {
+  height: 2.8em;
+}
+
+.container {
+  background: linear-gradient(90deg, var(--one), var(--two));
+  width: 25%;
+  min-width: 450px;
+  margin: auto;
+  margin-top: 4rem;
+  padding: 2.5em 2.5em 2em 2.5em;
+  height: 575px; /* 670 */
+  border-radius: 4px;
+}
+
+.sign_in,
+.sign_up {
+  width: 85%;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 1.5em;
+  justify-content: flex-start;
+  margin: 0;
+  font-size: 1rem;
+  color: #222;
+  margin: 0;
+}
+
+.sign_in h1,
+.sign_up h1 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.sign_in .username,
+.sign_up .f_name,
+.email,
+.pass,
+.sb {
+  width: 100%;
+  height: 50px;
+  background: #222;
+  margin-bottom: 2em;
+  border: none;
+  border-radius: 4px;
+}
+
+.sign_in .pass input,
+.sign_up .f_name input,
+.username input,
+.pass input,
+.email input {
+  width: inherit;
+  height: inherit;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.sign_in .sb a,
+.sign_up .sb a {
+  width: 100%;
+  height: inherit;
+}
+
+.sign_in .sb input,
+.sign_up .sb input {
+  border: none;
+  background: red;
+  border-radius: 4px;
+  width: inherit;
+  height: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.sign_in .sb input:hover,
+.sign_up .sb input:hover {
+  cursor: pointer;
+}
+
+.sign_in .pass input::placeholder,
+.username input::placeholder,
+.sign_up .f_name input::placeholder,
+.pass input::placeholder,
+.email input::placeholder {
+  text-align: left;
+  padding: 1em;
+  font-size: 1rem;
+}
+
+.text2 {
+  color: #5e5b5b;
+}
+
+.sign_in .text1,
+.sign_up .text1 {
+  color: #5e5b5b;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.sign_in .text1 a,
+.sign_up .text1 a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.sign_in .text1 a:hover,
+.sign_up .text1 a:hover {
+  text-decoration: underline;
+}
+
+.sign_in .text2 {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* ------------------- */
+
+.footer {
+  background: linear-gradient(90deg, var(--one), var(--two));
+  padding: 5rem 0 3em 0;
+}
+
+.footer .foot_bod {
+  width: 55%;
+  margin: auto;
+  color: #757575;
+}
+
+.contact2 {
+  justify-content: start;
+  margin-bottom: 2.5em;
+}
+
+.contact2 div,
+.contact2 div a {
+  font-size: 1em;
+  color: #757575;
+  margin-right: 0.1em;
+  text-decoration: none;
+}
+
+.contact2 div a:hover {
+  text-decoration: underline;
+}
+
+.foot_bod ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.foot_bod ul .lst_items {
+  justify-content: flex-start;
+  margin-bottom: 1.4em;
+}
+
+.foot_bod ul li {
+  /* border: 1px solid white; */
+  width: 25%;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.foot_bod ul li a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.foot_bod ul li a:hover {
+  text-decoration: underline;
+}
+
+.lang_sel2 {
+  width: fit-content;
+  border: 1px solid #757575;
+  border-radius: 2px;
+  padding: 0.6em 0.6em;
+}
+
+.lang2 select {
+  background: transparent;
+}
+
+.lang_sel2 .lang2 img:hover,
+.lang_sel2 .lang2 select:hover {
+  cursor: pointer;
+}
+
+.lang_sel2 .sel_lan {
+  border: none;
+  color: #757575;
+  font-size: 1em;
+  text-align: right;
+}
+
+.lang_sel2 .lang2 img {
+  width: 15px;
+  margin-right: 3px;
+}
+
+.foot_bod p {
+  color: #757575;
+  text-align: left;
+  margin-top: 1.5em;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    background: black;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 650px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+    height: 550px;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+  }
+
+  .container .sign_in {
+    width: 90%;
+    margin: 0;
+  }
+
+  .footer .foot_bod {
+    padding: 0;
+    width: 90%;
+    margin: auto;
+  }
+}
